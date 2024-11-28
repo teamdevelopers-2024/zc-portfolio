@@ -11,6 +11,8 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
+import flutter from "./tech/flutter.png";
+import flutter1 from "./tech/flutter-1.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -28,6 +30,13 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import kinsuki from './company/kinsuki.png';
+import sealand from './company/sealand.png';
+import photoscan from './company/photoscan.png'
+
+import kinsuki1 from './company/kinsuki-1.png'
+import photoscan1 from './company/photoscan-1.png'
+import sealand1 from './company/sealand1.png'
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -42,6 +51,7 @@ export {
   mobile,
   web,
   github,
+  flutter,
   menu,
   close,
   css,
@@ -65,4 +75,11 @@ export {
   carrent,
   jobit,
   tripguide,
+  kinsuki,
+  sealand,
+  photoscan,
+  kinsuki1,
+  photoscan1,
+  sealand1,
+  flutter1,
 };

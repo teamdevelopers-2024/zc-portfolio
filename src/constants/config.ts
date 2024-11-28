@@ -49,8 +49,8 @@ export const config: TConfig = {
     p: ["I develop 3D visuals, user", "interfaces and web applications"],
   },
   contact: {
-    p: "Get in touch",
-    h2: "Contact.",
+    p: "",
+    h2: "Contact Us.",
     form: {
       name: {
         span: "Your Name",
