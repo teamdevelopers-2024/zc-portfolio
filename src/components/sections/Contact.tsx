@@ -1,6 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { FaInstagram, FaLinkedin, FaFacebook, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 
 import { EarthCanvas } from "../canvas";
 import { SectionWrapper } from "../../hoc";

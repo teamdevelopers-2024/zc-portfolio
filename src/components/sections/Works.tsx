@@ -1,7 +1,6 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
-import { github } from "../../assets";
 import { SectionWrapper } from "../../hoc";
 import { projects } from "../../constants";
 import { fadeIn } from "../../utils/motion";
@@ -15,7 +14,6 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   description,
   tags,
   image,
-  sourceCodeLink,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>

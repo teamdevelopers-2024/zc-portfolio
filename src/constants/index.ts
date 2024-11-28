@@ -23,7 +23,6 @@ import {
   mongodb,
   git,
   figma,
-  flutter,
   flutter1,
   crm,
   threejs,
