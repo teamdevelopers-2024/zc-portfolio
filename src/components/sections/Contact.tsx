@@ -7,6 +7,8 @@ import { slideIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
 
+
+
 // Social Media Icons Data
 const socialMediaIcons = [
   {
@@ -19,7 +21,6 @@ const socialMediaIcons = [
       boxShadow: `0px 0px 15px 2px rgba(255, 105, 180, 0.8)`,
       transform: "translateY(-5px)",
       background: "linear-gradient(to right, #4c51bf, #ec4899)",
-      transition: "background 1s ease, transform 1s ease, box-shadow 1s ease",
     },
     iconStyle: {
       fontSize: "28px", // Larger icons for a more professional look
@@ -36,7 +37,6 @@ const socialMediaIcons = [
       boxShadow: `0px 0px 15px 2px rgba(0, 123, 181, 0.8)`,
       transform: "translateY(-5px)",
       background: "linear-gradient(to right, #0077b5, #0e76a8)",
-      transition: "background 1s ease, transform 1s ease, box-shadow 1s ease",
     },
     iconStyle: {
       fontSize: "28px",
@@ -53,7 +53,6 @@ const socialMediaIcons = [
   //     boxShadow: `0px 0px 15px 2px rgba(24, 119, 242, 0.8)`,
   //     transform: "translateY(-5px)",
   //     background: "linear-gradient(to right, #1877f2, #42b72a)",
-  //     transition: "background 1s ease, transform 1s ease, box-shadow 1s ease",
   //   },
   //   iconStyle: {
   //     fontSize: "28px",
@@ -70,7 +69,6 @@ const socialMediaIcons = [
       boxShadow: `0px 0px 15px 2px rgba(29, 161, 242, 0.8)`,
       transform: "translateY(-5px)",
       background: "linear-gradient(to right, #1da1f2, #a1c4fd)",
-      transition: "background 1s ease, transform 1s ease, box-shadow 1s ease",
     },
     iconStyle: {
       fontSize: "28px",
@@ -87,7 +85,6 @@ const socialMediaIcons = [
       boxShadow: `0px 0px 15px 2px rgba(255, 105, 180, 0.8)`,
       transform: "translateY(-5px)",
       background: "linear-gradient(to right, #4c51bf, #ec4899)",
-      transition: "background 1s ease, transform 1s ease, box-shadow 1s ease",
     },
     iconStyle: {
       fontSize: "28px",
