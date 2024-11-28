@@ -95,7 +95,7 @@ const socialMediaIcons = [
 
 const Contact = () => {
   return (
-    <div className="flex justify-between gap-16 xl:gap-24 overflow-hidden xl:mt-12 px-4 xl:px-8">
+    <div className="block overflow-hidden lg:flex justify-between xl:mt-12 px-4 xl:px-8">
       {/* Left Section */}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -143,7 +143,7 @@ const Contact = () => {
       {/* Right Section (Earth Canvas) */}
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="h-[350px] md:h-auto xl:h-auto xl:flex-1 xl:max-w-[800px] mx-auto mt-8 xl:mt-0"
+        className="mx-auto mt-8 xl:mt-0"
       >
         <EarthCanvas />
       </motion.div>
