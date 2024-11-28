@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className={`relative mx-auto md:h-screen w-full`}>
       <div
-        className={`absolute inset-0 top-[120px] mx-auto max-w-7xl ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px] mx-auto max-w-7xl ${styles.paddingX} flex flex-col items-start gap-5`}
       >
         
 
@@ -19,11 +19,28 @@ const Hero = () => {
             IT'S NOT JUST A WEBSITE-IT'S THE ESSENCE<br></br>OF OUR PASSION , PURPOSE<br/>AND CREATIVITY.
           </p>
         </div>
+        <div className=" w-full flex xs:hidden justify-center">
+        <a href="#about">
+          <div className="border-secondary flex h-[64px] w-[35px] items-start justify-center rounded-3xl border-4 p-2">
+            <motion.div
+              animate={{
+                y: [0, 27, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="bg-secondary mb-1 h-3 w-3 rounded-full"
+            />
+          </div>
+        </a>
+      </div>
       </div>
 
       <ComputersCanvas />
 
-      <div className="xs:bottom-10 absolute bottom-32 flex w-full items-center justify-center">
+      <div className="xs:bottom-10 absolute xs:flex hidden w-full items-center justify-center">
         <a href="#about">
           <div className="border-secondary flex h-[64px] w-[35px] items-start justify-center rounded-3xl border-4 p-2">
             <motion.div
