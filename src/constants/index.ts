@@ -220,7 +220,8 @@ const testimonials: TTestimonial[] = [
   },
   {
     testimonial:
-      'We are really happy with the e-commerce site Zeecode Solutions built for our shop. The custom features of a product fit our needs perfectly, and the navigation is so easy that everyone loves it. Our sales have improved dramatically!',
+      'We are really happy with the e-commerce site Zeecode Solutions built for our shop. The custom features of a product fit our needs perfectly, and the navigation is so easy that everyone loves it. ',
+      // Our sales have improved dramatically!
     name: 'Santhosh',
     designation: 'Co - Owner',
     company: 'Photoscan',
