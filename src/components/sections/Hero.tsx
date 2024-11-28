@@ -5,7 +5,7 @@ import { ComputersCanvas } from "../canvas";
 
 const Hero = () => {
   return (
-    <section className={`relative mx-auto h-screen w-full`}>
+    <section className={`relative mx-auto md:h-screen w-full`}>
       <div
         className={`absolute inset-0 top-[120px] mx-auto max-w-7xl ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -15,7 +15,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             We're Glad You're Here! <span className="text-[#6f6f6f]">Explore</span>
           </h1>
-          <p className={`${styles.heroSubText} text-white-100 mt-2`}>
+          <p className={`${styles.heroSubText} text-white-100 mt-2 text-base`}>
             IT'S NOT JUST A WEBSITE-IT'S THE ESSENCE<br></br>OF OUR PASSION , PURPOSE<br/>AND CREATIVITY.
           </p>
         </div>
@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="border-secondary flex h-[64px] w-[35px] items-start justify-center rounded-3xl border-4 p-2">
             <motion.div
               animate={{
-                y: [0, 24, 0],
+                y: [0, 27, 0],
               }}
               transition={{
                 duration: 1.5,
