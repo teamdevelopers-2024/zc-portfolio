@@ -65,7 +65,7 @@ const App = () => {
         <About />
         <Experience />
         {/* Render Works component only if OS is not iOS */}
-        {os !== "iOS" && <Works />}
+        {<Works />}
         <Feedbacks />
 
         {/* Contact Section with StarsCanvas */}
