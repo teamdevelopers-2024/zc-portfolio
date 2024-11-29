@@ -21,6 +21,7 @@ const detectOS = (): string => {
   if (/linux/i.test(userAgent)) Os = "Linux";
   if (/android/i.test(userAgent)) Os = "Android";
   if (/iPad|iPhone|iPod/.test(userAgent)) Os = "iOS";
+  console.log("OS Detected == ",Os)
   return Os;
 
 };
