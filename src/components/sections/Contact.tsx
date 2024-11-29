@@ -95,59 +95,68 @@ const socialMediaIcons = [
 
 const Contact = () => {
   return (
-    <div className="block overflow-hidden lg:flex justify-between xl:mt-12 px-4 xl:px-8">
-      {/* Left Section */}
-      <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className="bg-black-100 flex-col rounded-2xl p-8 xl:p-16 shadow-lg max-w-xl mx-auto"
-      >
-        {/* Title */}
-        <Header useMotion={false} {...config.contact} />
+    <>
+      <div className="block overflow-hidden lg:flex justify-between xl:mt-12 px-4 xl:px-8">
+        {/* Left Section */}
+        <motion.div
+          variants={slideIn("left", "tween", 0.2, 1)}
+          className="bg-black-100 flex-col rounded-2xl p-8 xl:p-16 shadow-lg max-w-xl mx-auto"
+        >
+          {/* Title */}
+          <Header useMotion={false} {...config.contact} />
 
-        {/* Description */}
-        <p className="text-lg text-gray-300 mt-4 mb-8 leading-relaxed text-justify">
-          At <span className="font-semibold text-white">Zeecode Solutions</span>, we offer best-in-class services and tailored solutions designed to accelerate your success. Whether you're interested in forming a strategic partnership or have any inquiries, we're here to assist and collaborate!
-        </p>
+          {/* Description */}
+          <p className="text-lg text-gray-300 mt-4 mb-8 leading-relaxed text-justify">
+            At <span className="font-semibold text-white">Zeecode Solutions</span>, we offer best-in-class services and tailored solutions designed to accelerate your success. Whether you're interested in forming a strategic partnership or have any inquiries, we're here to assist and collaborate!
+          </p>
 
-        {/* Social Media Icons */}
-        <div className="flex mt-8 justify-center xl:justify-start gap-6 md:gap-8">
-          {socialMediaIcons.map(({ icon: Icon, link, name, style, whileHover, iconStyle }) => (
-            <motion.div
-              key={name}
-              className="flex flex-col items-center group w-14 md:w-16" // Standardized width for professional look
-            >
-              <motion.a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={style}
-                whileHover={whileHover}
+          {/* Social Media Icons */}
+          <div className="flex mt-8 justify-center xl:justify-start gap-6 md:gap-8">
+            {socialMediaIcons.map(({ icon: Icon, link, name, style, whileHover, iconStyle }) => (
+              <motion.div
+                key={name}
+                className="flex flex-col items-center group w-14 md:w-16" // Standardized width for professional look
               >
-                <Icon
-                  className="transition-all duration-300 ease-in-out"
-                  style={iconStyle}
-                />
-              </motion.a>
-              {/* Text shown only on hover of the icon */}
-              <motion.p
-                className="mt-2 text-sm text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
-                style={{ textShadow: "0 0 10px rgba(255, 255, 255, 0.8)" }}
-              >
-                {name}
-              </motion.p>
-            </motion.div>
-          ))}
+                <motion.a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={style}
+                  whileHover={whileHover}
+                >
+                  <Icon
+                    className="transition-all duration-300 ease-in-out"
+                    style={iconStyle}
+                  />
+                </motion.a>
+                {/* Text shown only on hover of the icon */}
+                <motion.p
+                  className="mt-2 text-sm text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+                  style={{ textShadow: "0 0 10px rgba(255, 255, 255, 0.8)" }}
+                >
+                  {name}
+                </motion.p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Right Section (Earth Canvas) */}
+        <motion.div
+          variants={slideIn("right", "tween", 0.2, 1)}
+          className="mx-auto mt-8 xl:mt-0"
+        >
+          <EarthCanvas />
+        </motion.div>
+
+      </div>
+      {/* Copyright Footer */}
+      <footer className="w-full h-0 md:mt-8">
+        <div className="text-center text-gray-500">
+          <p>&copy; {new Date().getFullYear()} Zeecode Solutions. All rights reserved.</p>
         </div>
-      </motion.div>
-
-      {/* Right Section (Earth Canvas) */}
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="mx-auto mt-8 xl:mt-0"
-      >
-        <EarthCanvas />
-      </motion.div>
-    </div>
+      </footer>
+    </>
   );
 };
 

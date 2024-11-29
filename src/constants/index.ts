@@ -31,7 +31,9 @@ import {
   photoscan,
   kinsuki1,
   photoscan1,
+
   sealand1,
+  marica,
 } from '../assets';
 
 export const navLinks: TNavLink[] = [
@@ -191,6 +193,19 @@ const experiences: TExperience[] = [
       'Optimized performance and implemented scalable solutions to handle growing user traffic.',
     ],
   },
+  {
+    title: 'Brand Consulting',
+    companyName: 'Marica',
+    icon: marica, // Replace with appropriate icon
+    iconBg: '#ffffff',
+    date: 'November 2024 - Present',
+    points: [
+      'Designed and developed a custom brand logo reflecting Marica’s values and vision.',
+      'Created visual assets and brand guidelines to ensure consistent branding across platforms.',
+      'Collaborated closely with Marica to understand their brand identity and design digital assets that align with their vision.',
+      'Focused on brand development strategies to enhance recognition and market presence.',
+    ],
+  }
 ];
 
 const testimonials: TTestimonial[] = [
@@ -338,6 +353,23 @@ const projects: TProject[] = [
     image: sealand1, // Replace with actual image for SeaLand
     sourceCodeLink: 'https://github.com/your-repo/sealand-car-services', // Replace with actual GitHub link
   },
+  {
+    name: 'Marica Brand Development',
+    description:
+      'A comprehensive brand development project for Marica, focusing on logo design, visual assets, and crafting a strong brand identity to establish a unique presence in the market.',
+    tags: [
+      {
+        name: 'branding',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'digital marketing',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: marica, // Replace with actual image or visual asset related to Marica
+    sourceCodeLink: 'https://github.com/your-repo/marica-brand-development', // Replace with actual GitHub link or project details
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };

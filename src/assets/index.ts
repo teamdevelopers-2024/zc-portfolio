@@ -33,6 +33,7 @@ import tesla from "./company/tesla.png";
 import kinsuki from './company/kinsuki.png';
 import sealand from './company/sealand.png';
 import photoscan from './company/photoscan.png'
+import marica from './company/marica.png';
 
 import kinsuki1 from './company/kinsuki-1.png'
 import photoscan1 from './company/photoscan-1.png'
@@ -82,4 +83,5 @@ export {
   photoscan1,
   sealand1,
   flutter1,
+  marica,
 };
