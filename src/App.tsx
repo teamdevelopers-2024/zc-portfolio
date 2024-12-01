@@ -22,6 +22,7 @@ const detectOS = (): string => {
   if (/android/i.test(userAgent)) Os = "Android";
   if (/iPad|iPhone|iPod/.test(userAgent)) Os = "iOS";
   console.log("OS Detected == ",Os)
+  if (Os === "iOS"|| Os === "Android") Os = "Mobile";
   return Os;
 
 };
@@ -65,7 +66,7 @@ const App = () => {
         <About />
         <Experience />
         {/* Render Works component only if OS is not iOS */}
-        {os !== "iOS" && <Works />}
+        {os !== "Mobile" && <Works />}
         <Feedbacks />
 
         {/* Contact Section with StarsCanvas */}
